@@ -1,0 +1,2 @@
+[console_scripts]
+malab = multi_agent_research_lab.cli:app

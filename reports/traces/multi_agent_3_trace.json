@@ -1,0 +1,49 @@
+[
+  {
+    "name": "supervisor.route",
+    "payload": {
+      "decision": "researcher",
+      "reason": "missing_research"
+    }
+  },
+  {
+    "name": "researcher.complete",
+    "payload": {
+      "num_sources": 5,
+      "duration": 6.550000398419797e-05
+    }
+  },
+  {
+    "name": "supervisor.route",
+    "payload": {
+      "decision": "analyst",
+      "reason": "missing_analysis"
+    }
+  },
+  {
+    "name": "analyst.complete",
+    "payload": {
+      "duration": 2.9800008633174002e-05
+    }
+  },
+  {
+    "name": "supervisor.route",
+    "payload": {
+      "decision": "writer",
+      "reason": "missing_final_answer"
+    }
+  },
+  {
+    "name": "writer.complete",
+    "payload": {
+      "duration": 2.5500004994682968e-05
+    }
+  },
+  {
+    "name": "supervisor.route",
+    "payload": {
+      "decision": "done",
+      "reason": "all_steps_completed"
+    }
+  }
+]
