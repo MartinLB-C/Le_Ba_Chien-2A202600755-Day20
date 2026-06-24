@@ -10,7 +10,7 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 from multi_agent_research_lab.core.config import get_settings
 
 try:
-    import openai
+    import openai  # type: ignore
 except ImportError:
     openai = None
 
