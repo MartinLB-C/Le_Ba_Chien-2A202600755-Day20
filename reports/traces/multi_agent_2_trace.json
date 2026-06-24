@@ -10,7 +10,7 @@
     "name": "researcher.complete",
     "payload": {
       "num_sources": 5,
-      "duration": 9.67315060000692
+      "duration": 5.560068999999203
     }
   },
   {
@@ -23,7 +23,7 @@
   {
     "name": "analyst.complete",
     "payload": {
-      "duration": 19.278058699987014
+      "duration": 10.962687999999616
     }
   },
   {
@@ -36,7 +36,7 @@
   {
     "name": "writer.complete",
     "payload": {
-      "duration": 21.385656099999323
+      "duration": 22.56121699999494
     }
   },
   {

@@ -57,7 +57,15 @@ class LLMClient:
             temperature=0.0,
         )
 
-        content = response.choices[0].message.content or ""
+        if response.choices:
+            content = response.choices[0].message.content or ""
+        else:
+            # Handle non-standard responses (e.g. Aliyun DashScope) which may return text directly
+            content = getattr(response, "text", None)
+            if content is None and hasattr(response, "model_extra") and response.model_extra:
+                content = response.model_extra.get("text", "")
+            content = content or ""
+            
         usage = response.usage
         
         input_tokens = usage.prompt_tokens if usage else 0
